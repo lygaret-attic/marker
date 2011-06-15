@@ -7,3 +7,13 @@ group :development, :test do
     # To use debugger
     gem 'ruby-debug19', :require => 'ruby-debug'
 end
+
+group :development do
+    gem 'rspec-rails'
+end
+
+group :test do
+    gem 'rspec'
+    gem 'cucumber'
+    gem 'webrat'
+end
