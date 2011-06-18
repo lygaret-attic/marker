@@ -1,4 +1,7 @@
 class BookmarksController < ApplicationController
+
+  before_filter :authenticate_user!
+
   # GET /bookmarks
   # GET /bookmarks.xml
   def index
