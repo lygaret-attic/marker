@@ -14,6 +14,8 @@ Marker::Application.routes.draw do
   resources :users
   resources :bookmarks
 
+  root :to => "pages#home"
+
   get '/:action', :controller => 'pages', :constraints => PageExists.new
   get '*' => 'pages#notfound'
 end
